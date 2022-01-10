@@ -1,4 +1,4 @@
-package com.ad.thethetaprectical
+package com.ad.thethetaprectical.util
 
 import android.content.Context
 import android.content.SharedPreferences

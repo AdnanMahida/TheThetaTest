@@ -1,10 +1,12 @@
-package com.ad.thethetaprectical
+package com.ad.thethetaprectical.ui
 
 import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import androidx.appcompat.app.AppCompatActivity
+import com.ad.thethetaprectical.util.AppPreferences
+import com.ad.thethetaprectical.util.Util
 import com.ad.thethetaprectical.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
