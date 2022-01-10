@@ -24,10 +24,22 @@ class ListsAdapter(
         @SuppressLint("SetTextI18n", "ResourceAsColor")
         fun bind(usr: UsersItem) {
             binding.apply {
-                txtName.text = "Name: ${usr.name}"
+                var name: String? = null
+                var email: String? = null
+                name = if (usr.name.startsWith("@")) {
+                    usr.name.drop(1)
+                } else {
+                    usr.name
+                }
+                email = if (usr.email.startsWith("@")) {
+                    usr.email.drop(1)
+                } else {
+                    usr.email
+                }
+                txtName.text = "Name: $name"
                 txtAge.text = "Age: ${usr.age}"
-                txtEmail.text = "Email: ${usr.email}"
-                Log.d("fgfgfg",usr.parent +" hail")
+                txtEmail.text = "Email: $email"
+                Log.d("fgfgfg", usr.parent + " hail")
             }
         }
 
