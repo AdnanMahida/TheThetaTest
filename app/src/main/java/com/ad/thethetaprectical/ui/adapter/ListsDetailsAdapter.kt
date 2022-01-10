@@ -11,19 +11,19 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.ad.thethetaprectical.databinding.RecycleListBinding
 import com.ad.thethetaprectical.model.Child
-import com.ad.thethetaprectical.model.UsersItem
+import com.ad.thethetaprectical.ui.UserDetailsActivity
 
-class ListsAdapter(
+class ListsDetailsAdapter(
     private val listener: OnClickListener
 ) :
-    ListAdapter<UsersItem, ListsAdapter.ProductViewHolder>(Diff), Filterable {
-    private var list = mutableListOf<UsersItem>()
+    ListAdapter<Child, ListsDetailsAdapter.ProductViewHolder>(Diff), Filterable {
+    private var list = mutableListOf<Child>()
 
 
     class ProductViewHolder(val binding: RecycleListBinding) :
         RecyclerView.ViewHolder(binding.root) {
         @SuppressLint("SetTextI18n", "ResourceAsColor")
-        fun bind(usr: UsersItem) {
+        fun bind(usr: Child) {
             binding.apply {
                 var name: String? = null
                 var email: String? = null
@@ -48,11 +48,11 @@ class ListsAdapter(
 
 
 
-    object Diff : DiffUtil.ItemCallback<UsersItem>() {
-        override fun areItemsTheSame(oldItem: UsersItem, newItem: UsersItem): Boolean =
+    object Diff : DiffUtil.ItemCallback<Child>() {
+        override fun areItemsTheSame(oldItem: Child, newItem: Child): Boolean =
             oldItem.id == newItem.id
 
-        override fun areContentsTheSame(oldItem: UsersItem, newItem: UsersItem): Boolean =
+        override fun areContentsTheSame(oldItem: Child, newItem: Child): Boolean =
             oldItem.id == newItem.id
     }
 
@@ -76,14 +76,14 @@ class ListsAdapter(
     }
 
     interface OnClickListener {
-        fun setOnClickListener(obj: UsersItem)
+        fun setOnClickListener(obj: Child)
 
     }
 
     override fun getFilter(): Filter {
         return object : Filter() {
             override fun performFiltering(constraint: CharSequence?): FilterResults {
-                val filteredList = mutableListOf<UsersItem>()
+                val filteredList = mutableListOf<Child>()
                 if (constraint == null || constraint.isEmpty()) {
                     filteredList.addAll(list)
                 } else {
@@ -101,7 +101,7 @@ class ListsAdapter(
             }
 
             override fun publishResults(constraint: CharSequence?, filterResults: FilterResults?) {
-                submitList(filterResults?.values as MutableList<UsersItem>)
+                submitList(filterResults?.values as MutableList<Child>)
             }
 
 

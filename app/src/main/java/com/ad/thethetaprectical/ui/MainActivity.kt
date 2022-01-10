@@ -33,13 +33,13 @@ class MainActivity : AppCompatActivity(), NavigationBarView.OnItemSelectedListen
             R.id.navigation_home -> {
                 fm.beginTransaction().hide(active).show(homeFragment).commit()
                 active = homeFragment
-                setTitle("Home")
+                title = "Home"
                 true
             }
             R.id.navigation_profile -> {
                 fm.beginTransaction().hide(active).show(profileFragment).commit()
                 active = profileFragment
-                setTitle("Profile")
+                title = "Profile"
                 true
 
             }

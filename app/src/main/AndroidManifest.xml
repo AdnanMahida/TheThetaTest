@@ -14,6 +14,7 @@
         android:theme="@style/Theme.TheThetaPrectical"
         android:usesCleartextTraffic="true">
         <activity
+            android:parentActivityName=".ui.MainActivity"
             android:name=".ui.UserDetailsActivity"
             android:exported="false"
             android:label="User Details" />

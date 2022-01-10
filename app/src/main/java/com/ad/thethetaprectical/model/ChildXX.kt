@@ -1,5 +1,7 @@
 package com.ad.thethetaprectical.model
 
+import java.io.Serializable
+
 data class ChildXX(
     val age: Int,
     val child: List<ChildXXX>,
@@ -8,4 +10,4 @@ data class ChildXX(
     val level: Int,
     val name: String,
     val parent: String
-)
+): Serializable
