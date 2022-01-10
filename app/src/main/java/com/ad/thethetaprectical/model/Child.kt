@@ -2,7 +2,7 @@ package com.ad.thethetaprectical.model
 
 import java.io.Serializable
 
-data class Child(
+data class  Child(
     val age: Int,
     val child: List<ChildX>,
     val email: String,
