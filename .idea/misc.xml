@@ -5,8 +5,10 @@
       <map>
         <entry key="..\:/AndroidDevelopment4.0/ThePrecticalTest/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/AndroidDevelopment4.0/ThePrecticalTest/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/AndroidDevelopment4.0/ThePrecticalTest/app/src/main/res/layout/activity_user_details.xml" value="0.11548913043478261" />
         <entry key="..\:/AndroidDevelopment4.0/ThePrecticalTest/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
         <entry key="..\:/AndroidDevelopment4.0/ThePrecticalTest/app/src/main/res/layout/fragment_profile.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidDevelopment4.0/ThePrecticalTest/app/src/main/res/layout/recycle_list.xml" value="0.33" />
         <entry key="..\:/AndroidDevelopment4.0/ThePrecticalTest/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20416666666666666" />
       </map>
     </option>
